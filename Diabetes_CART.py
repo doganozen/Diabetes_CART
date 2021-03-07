@@ -16,15 +16,12 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from helpers.eda import *
 pd.set_option('display.max_columns', None)
 
-######
-# veriseti bilgileri
-########
 
 ################################
 # DATA PREPROCESSING
 ################################
 
-# ağaç yöntemi kullanacağız bu sebeple data preprocessing ile işimiz yok
+# We will use the tree method so we have no business with data preprocessing.
 
 df_ = pd.read_csv("datasets/diabetes.csv")
 df = df_.copy()
